@@ -26,8 +26,9 @@ header {
 }
 
 .logo {
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: bold;
+  text-align: left;
 }
 
 nav ul {
@@ -198,4 +199,62 @@ footer {
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
+}
+
+/* 🌾🌾🌾 NOVO: Ajustes para celular 🌾🌾🌾 */
+@media (max-width: 768px) {
+  /* Menu empilhado */
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    background-position: center;
+    padding-top: 100px;
+  }
+
+  .hero h1 {
+    font-size: 1.6em;
+  }
+
+  /* Sobre a Fazenda em coluna */
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content img {
+    width: 100%;
+  }
+
+  .about-content div {
+    text-align: center;
+  }
+
+  /* Reduz margens */
+  .section {
+    padding: 60px 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 25px;
+  }
+
+  .hero h1 {
+    font-size: 1.4em;
+  }
+
+  .btn {
+    padding: 8px 15px;
+  }
 }
