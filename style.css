@@ -258,3 +258,96 @@ footer {
     padding: 8px 15px;
   }
 }
+/* 🌾 MENU RESPONSIVO COM ANIMAÇÃO MODERNA 🌾 */
+
+/* Botão hamburguer (3 risquinhos) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Estado aberto (vira “X”) */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Menu lateral */
+.nav-links {
+  transition: transform 0.3s ease;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 900;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  nav ul.nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 240px;
+    background-color: #4b6043;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  nav ul.nav-links.active {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  /* Evita que o logo fique muito perto do topo */
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 25px;
+  }
+}
+
+/* 🌿 Cabeçalho flutuante com sombra ao rolar */
+header.scrolled {
+  background-color: rgba(75, 96, 67, 0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
