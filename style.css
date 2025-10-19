@@ -202,46 +202,45 @@ footer {
 }
 
 /* 🌾🌾🌾 NOVO: Ajustes para celular 🌾🌾🌾 */
+/* Estilos responsivos */
 @media (max-width: 768px) {
-  /* Menu empilhado */
   header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+  }
+
+  .logo {
+    flex: 1;
+    text-align: left;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav ul.nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 240px;
+    background-color: #4b6043;
     flex-direction: column;
-    padding: 10px 20px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+  nav ul.nav-links.active {
+    transform: translateX(0);
   }
 
-  .hero {
-    background-position: center;
-    padding-top: 100px;
-  }
-
-  .hero h1 {
-    font-size: 1.6em;
-  }
-
-  /* Sobre a Fazenda em coluna */
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-content img {
-    width: 100%;
-  }
-
-  .about-content div {
-    text-align: center;
-  }
-
-  /* Reduz margens */
-  .section {
-    padding: 60px 5%;
+  .overlay.active {
+    display: block;
   }
 }
 
