@@ -1,0 +1,201 @@
+/* Estilo geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #faf8f4;
+  color: #333;
+}
+
+/* Cabeçalho fixo */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #4b6043;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d2b48c;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url("imagens/por-do-sol.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 70px;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #d2b48c;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #c19a6b;
+}
+
+/* Seções */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #4b6043;
+}
+
+/* Cards Produção */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Sobre */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-content img {
+  width: 45%;
+  border-radius: 15px;
+}
+
+.about-content div {
+  flex: 1;
+  text-align: left;
+}
+
+.about-content ul {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.about-content li {
+  margin-bottom: 5px;
+}
+
+/* Galeria */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Contato */
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button {
+  cursor: pointer;
+}
+
+.whatsapp {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #4b6043;
+}
+
+/* Rodapé */
+footer {
+  background-color: #4b6043;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
