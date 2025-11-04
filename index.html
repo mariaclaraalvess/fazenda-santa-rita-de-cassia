@@ -1,109 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fazenda Santa Rita de Cássia</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<header>
-  <div class="logo">Fazenda Santa Rita de Cássia</div>
-
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#producao">Produção</a></li>
-      <li><a href="#galeria">Galeria</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-
-  <!-- Botão do menu animado -->
-  <div class="menu-toggle" id="menu-toggle">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </div>
-</header>
-
-<div class="overlay" id="overlay"></div>
-
-
-
-<!-- Seção Inicial -->
-<section id="home" class="hero">
-    <div class="hero-content">
-    <h1>Produção com qualidade e respeito à terra</h1>
-    <p>No coração do Tocantins, cultivando soja e criando gado de forma sustentável.</p>
-    <a href="#producao" class="btn">Conheça Nossa Produção</a>
+  <!-- 🌿 Cabeçalho -->
+  <header>
+    <div class="logo">Fazenda Santa Rita de Cássia</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
-</section>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#producao">Produção</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- Produção -->
-<section id="producao" class="section">
+  <div class="overlay" id="overlay"></div>
+
+  <!-- 🌾 Seção principal -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Produção com qualidade e sustentabilidade</h1>
+      <p>Do coração do Tocantins, cultivamos soja e criamos gado com respeito à terra e ao futuro.</p>
+      <a href="#sobre" class="btn">Conheça a Fazenda</a>
+    </div>
+  </section>
+
+  <!-- 🌿 Sobre a Fazenda -->
+  <section id="sobre" class="section">
+    <h2>Sobre a Fazenda</h2>
+    <div class="about-content">
+      <img src="imagens/fazenda.jpg" alt="Vista da Fazenda Santa Rita de Cássia" />
+      <div>
+        <p>A Fazenda Santa Rita de Cássia está localizada no interior do Tocantins e une tradição e tecnologia para produzir com qualidade e respeito à natureza.</p>
+        <ul>
+          <li>🌾 Cultivo de soja com práticas sustentáveis</li>
+          <li>🐄 Criação de gado de confinamento</li>
+          <li>🌱 Foco em manejo responsável e inovação</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🐮 Produção -->
+  <section id="producao" class="section">
     <h2>Nossa Produção</h2>
     <div class="cards">
-    <div class="card">
-        <img src="imagens/soja.jpg" alt="Soja">
-        <h3>Cultivo de Soja</h3>
-        <p>Produzimos soja de alta qualidade com técnicas modernas, garantindo produtividade e respeito ao meio ambiente.</p>
+      <div class="card">
+        <img src="imagens/gado.jpg" alt="Gado de confinamento" />
+        <h3>Confinamento de Gado</h3>
+        <p>Produção de carne com manejo responsável e bem-estar animal.</p>
+      </div>
+      <div class="card">
+        <img src="imagens/soja.jpg" alt="Plantação de soja" />
+        <h3>Soja</h3>
+        <p>Grãos de alta qualidade produzidos com tecnologia e sustentabilidade.</p>
+      </div>
     </div>
-    <div class="card">
-        <img src="imagens/gado.jpg" alt="Gado de confinamento">
-        <h3>Gado de Confinamento</h3>
-        <p>Criação responsável e manejo eficiente, com foco no bem-estar animal e na produção de carne de qualidade.</p>
-    </div>
-    </div>
-</section>
+  </section>
 
-<!-- Sobre -->
-<section id="sobre" class="section about">
-    <div class="about-content">
-    <img src="imagens/fazenda.jpg" alt="Vista da Fazenda">
-    <div>
-        <h2>Sobre a Fazenda</h2>
-        <p>A Fazenda Santa Rita de Cássia é fruto de dedicação e amor ao campo. Localizada no interior do Tocantins, nossa missão é produzir com responsabilidade, tradição e respeito à natureza.</p>
-        <ul>
-        <li>🌱 Sustentabilidade</li>
-        <li>🐄 Qualidade</li>
-        <li>🤝 Tradição Familiar</li>
-        </ul>
-    </div>
-    </div>
-</section>
-
-<!-- Galeria -->
-<section id="galeria" class="section">
+  <!-- 📸 Galeria -->
+  <section id="galeria" class="section">
     <h2>Galeria</h2>
     <div class="galeria">
-    <img src="imagens/soja.jpg" alt="Plantação de soja">
-    <img src="imagens/gado.jpg" alt="Gado de confinamento">
-    <img src="imagens/fazenda.jpg" alt="Vista da fazenda">
-    <img src="imagens/por-do-sol.jpg" alt="Pôr do sol na fazenda">
+      <img src="imagens/fazenda.jpg" alt="Vista da fazenda" />
+      <img src="imagens/soja.jpg" alt="Plantação de soja" />
+      <img src="imagens/gado.jpg" alt="Gado no pasto" />
+      <img src="imagens/por-do-sol.jpg" alt="Pôr do sol na fazenda" />
     </div>
-</section>
+  </section>
 
-<!-- Contato -->
-<section id="contato" class="section contato">
-    <h2>Contato</h2>
-    <p>Entre em contato conosco para informações, parcerias ou visitas.</p>
+  <!-- 📞 Contato -->
+  <section id="contato" class="section contato">
+    <h2>Entre em Contato</h2>
     <form>
-    <input type="text" placeholder="Seu nome" required>
-    <input type="email" placeholder="Seu e-mail" required>
-    <textarea placeholder="Sua mensagem" required></textarea>
-    <button type="submit" class="btn">Enviar</button>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+      <button type="submit" class="btn">Enviar Mensagem</button>
     </form>
-    <p class="whatsapp">📞 WhatsApp: (63) 99999-9999</p>
-</section>
+    <p class="whatsapp">📱 WhatsApp: (63) 9 9999-9999</p>
+  </section>
 
-<!-- Rodapé -->
-<footer>
-    <p>© 2025 Fazenda Santa Rita de Cássia — Interior do Tocantins</p>
-</footer>
+  <!-- 🪶 Rodapé -->
+  <footer>
+    <p>&copy; 2025 Fazenda Santa Rita de Cássia — Tocantins</p>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
