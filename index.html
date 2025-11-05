@@ -7,17 +7,20 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- 🌿 Cabeçalho -->
+  
+  <!--Cabeçalho -->
   <header>
     <div class="logo">Fazenda Santa Rita de Cássia</div>
-    <div class="menu-toggle" id="menu-toggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+    <!--botão de abrir/fechar o menu-->
+    <div class="botão-menu" id="botão-menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
     </div>
+
+    <!--Menu hamburguer-->
     <nav>
-      
-      <ul class="nav-links" id="nav-links">
+      <ul class="menu" id="menu">
         <li><a href="#inicio">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#producao">Produção</a></li>
@@ -26,20 +29,21 @@
       </ul>
     </nav>
   </header>
+  
+  <!--fundo do menu-->
+  <div class="fundo" id="fundo"></div>
 
-  <div class="overlay" id="overlay"></div>
-
-  <!-- 🌾 Seção principal -->
-  <section id="inicio" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
+  <!--Seção principal -->
+  <section id="inicio" class="inicio">
+    <div class="inicio-fundo"></div>
+    <div class="inicio-content">
       <h1>Produção com qualidade e sustentabilidade</h1>
       <p>Do coração do Tocantins, cultivamos soja e criamos gado com respeito à terra e ao futuro.</p>
-      <a href="#sobre" class="btn">Conheça a Fazenda</a>
+      <a href="#sobre" class="botao">Conheça a Fazenda</a>
     </div>
   </section>
 
-  <!-- 🌿 Sobre a Fazenda -->
+  <!--Sobre a Fazenda -->
   <section id="sobre" class="section">
     <h2>Sobre a Fazenda</h2>
     <div class="about-content">
@@ -55,7 +59,7 @@
     </div>
   </section>
 
-  <!-- 🐮 Produção -->
+  <!--Produção -->
   <section id="producao" class="section">
     <h2>Nossa Produção</h2>
     <div class="cards">
@@ -72,7 +76,7 @@
     </div>
   </section>
 
-  <!-- 📸 Galeria -->
+  <!--Galeria -->
   <section id="galeria" class="section">
     <h2>Galeria</h2>
     <div class="galeria">
@@ -82,7 +86,7 @@
     </div>
   </section>
 
-  <!-- 📞 Contato -->
+  <!--Contato -->
   <section id="contato" class="section contato">
     <h2>Entre em Contato</h2>
     <form>
@@ -94,7 +98,7 @@
     <p class="whatsapp">📱 WhatsApp: (63) 9 9999-9999</p>
   </section>
 
-  <!-- 🪶 Rodapé -->
+  <!--Rodapé -->
   <footer>
     <p>&copy; 2025 Fazenda Santa Rita de Cássia — Tocantins</p>
   </footer>

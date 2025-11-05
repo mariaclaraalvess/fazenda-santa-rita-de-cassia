@@ -1,4 +1,4 @@
-/* 🌿 ESTILO GERAL */
+/*estilo geral*/
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-/* 🌿 CABEÇALHO COM TRANSPARÊNCIA */
+/*cabeçalho com transparencia*/
 header {
   position: fixed;
   top: 0;
@@ -36,7 +36,7 @@ header.scrolled {
   font-weight: bold;
 }
 
-/* MENU */
+/*menu*/
 nav ul {
   list-style: none;
   display: flex;
@@ -54,8 +54,8 @@ nav a:hover {
   color: #d2b48c;
 }
 
-/* BOTÃO HAMBURGUER */
-.menu-toggle {
+/*botão hamburguer*/
+.botão-menu{
   margin-left: auto;
   display: none;
   flex-direction: column;
@@ -66,7 +66,7 @@ nav a:hover {
   z-index: 1100;
 }
 
-.menu-toggle .bar {
+.botão-menu .linha {
   height: 3px;
   width: 100%;
   background-color: #fff;
@@ -74,18 +74,18 @@ nav a:hover {
   transition: all 0.3s ease;
 }
 
-.menu-toggle.active .bar:nth-child(1) {
+.botão-menu.active .bar:nth-child(1) {
   transform: rotate(45deg) translateY(8px);
 }
-.menu-toggle.active .bar:nth-child(2) {
+.botão-menu.active .bar:nth-child(2) {
   opacity: 0;
 }
-.menu-toggle.active .bar:nth-child(3) {
+.botão-menu.active .bar:nth-child(3) {
   transform: rotate(-45deg) translateY(-8px);
 }
 
-/* HERO */
-.hero {
+/*Inicio*/
+.inicio {
   height: 100vh;
   background: url("imagens/por-do-sol.jpg") center/cover no-repeat;
   position: relative;
@@ -97,7 +97,7 @@ nav a:hover {
   overflow: hidden;
 }
 
-.hero-overlay {
+.inicio-fundo {
   position: absolute;
   top: 0;
   left: 0;
@@ -107,14 +107,14 @@ nav a:hover {
   z-index: 1;
 }
 
-.hero-content {
+.inicio-content {
   position: relative;
   z-index: 2;
   max-width: 700px;
   padding: 20px;
 }
 
-.hero h1 {
+.inicio h1 {
   font-size: 2em;
   margin-bottom: 20px;
   font-weight: 600;
@@ -123,7 +123,7 @@ nav a:hover {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
-.hero p {
+.inicio p {
   font-size: 1em;
   margin-bottom: 30px;
   color: #f5f5f5;
@@ -131,7 +131,8 @@ nav a:hover {
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
-.btn {
+/*botão conheça a fazenda*/
+.botao {
   background-color: #d2b48c;
   color: #333;
   padding: 12px 30px;
@@ -142,13 +143,13 @@ nav a:hover {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.btn:hover {
+.botao:hover {
   background-color: #c19a6b;
   transform: translateY(-3px);
   box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4);
 }
 
-/* SEÇÕES GERAIS */
+/*seção geral*/
 .section {
   padding: 80px 10%;
   text-align: center;
@@ -160,7 +161,7 @@ nav a:hover {
   color: #4b6043;
 }
 
-/* SOBRE */
+/*sobre*/
 .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -187,7 +188,7 @@ nav a:hover {
   margin-bottom: 5px;
 }
 
-/* PRODUÇÃO */
+/*produção*/
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -210,7 +211,7 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-/* GALERIA */
+/*galeria*/
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -223,7 +224,7 @@ nav a:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* CONTATO */
+/*contato*/
 .contato form {
   display: flex;
   flex-direction: column;
@@ -249,7 +250,7 @@ button {
   color: #4b6043;
 }
 
-/* RODAPÉ */
+/*rodapé*/
 footer {
   background-color: #4b6043;
   color: #fff;
@@ -258,7 +259,7 @@ footer {
   font-size: 0.9em;
 }
 
-/* RESPONSIVO */
+/*responsividade mobile*/
 @media (max-width: 768px) {
   header {
     display: flex;
@@ -267,7 +268,7 @@ footer {
     padding: 15px 25px;
   }
 
-  nav ul.nav-links {
+  nav ul.menu {
     position: fixed;
     top: 0;
     right: 0;
@@ -282,11 +283,11 @@ footer {
     z-index: 1000;
   }
 
-  nav ul.nav-links.active {
+  nav ul.menu.active {
     transform: translateX(0);
   }
 
-  .menu-toggle {
+  .botão-menu {
     display: flex;
   }
 
